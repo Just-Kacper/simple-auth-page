@@ -18,15 +18,16 @@
             </div>
         </h1>
         <div class="text-center">
+            <form>
             <input type="email"
                 class="w-3/4 p-2 mb-4 border-2 border-amber-300 rounded-lg  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 placeholder:font-bold"
-                id="mail"
+                id="logmail"
                 placeholder="Enter your email" required />
         </div>
         <div class="text-center">
             <input type="password"
                 class="w-3/4 p-2 mb-2 border-0 border-2 border-amber-300 rounded-lg  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 placeholder:font-bold"
-                id="pass"
+                id="logpassword"
                 placeholder="Enter your password" required />
         </div>
 
@@ -34,14 +35,15 @@
 
         <div class="text-center">
             <button
+                type="submit"
                 class="pl-12 pr-12 pt-4 pb-4 bg-slate-800 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                 id="log" onclick="notify()">
                 <p class="text-2xl font-bold text-amber-300">
                     Log in
                 </p>
             </button>
-            <p id="successfully" class="text-2xl font-bold"></p>
-            <p id="unsuccessfully" class="text-2xl font-bold text-red-600"></p>
+        </form>
+            <h1 id="successfully" class="text-4xl font-bold text-green-600 m-8"></h1>
         </div>
     </div>
 </body>
