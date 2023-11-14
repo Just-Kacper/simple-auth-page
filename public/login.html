@@ -11,7 +11,7 @@
 
 <body class="flex items-center justify-center h-screen bg-neutral-300">
     <script type="text/javascript" src="/assets/scripts/main.js"></script>
-    <div class="p-8 h-3/6 w-96 rounded-lg shadow-2xl border-2 border-slate-300 bg-slate-100">
+    <div class="p-8 h-4/5 w-96 rounded-lg shadow-2xl border-2 border-slate-300 bg-slate-100">
         <h1 class="m-2 text-2xl font-bold text-center">
             <div class="w-72 h-10 pt-1 mb-4 mr-28 rounded-full bg-slate-800 text-amber-300">
                 Join our community!
@@ -21,14 +21,14 @@
             <form>
             <input type="email"
                 class="w-3/4 p-2 mb-4 border-2 border-amber-300 rounded-lg  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 placeholder:font-bold"
-                id="logmail"
-                placeholder="Enter your email" required />
+                id="emailToLogin"
+                placeholder="Enter your email" required/>
         </div>
         <div class="text-center">
             <input type="password"
                 class="w-3/4 p-2 mb-2 border-0 border-2 border-amber-300 rounded-lg  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 placeholder:font-bold"
-                id="logpassword"
-                placeholder="Enter your password" required />
+                id="passwordToLogin"
+                placeholder="Enter your password" required/>
         </div>
 
         </br>
@@ -37,13 +37,15 @@
             <button
                 type="submit"
                 class="pl-12 pr-12 pt-4 pb-4 bg-slate-800 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                id="log" onclick="notify()">
+                id="log" 
+                onclick="notification()">
                 <p class="text-2xl font-bold text-amber-300">
                     Log in
                 </p>
             </button>
         </form>
-            <h1 id="successfully" class="text-4xl font-bold text-green-600 m-8"></h1>
+            <h1 id="successful" class="text-4xl font-bold text-green-600 m-8"></h1>
+            <h1 id="unsuccessful" class="text-4xl font-bold text-red-600"></h1> 
         </div>
     </div>
 </body>
